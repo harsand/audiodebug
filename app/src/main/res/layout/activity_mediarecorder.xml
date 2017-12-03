@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/module_title_layout"
+        layout="@layout/activity_base_module_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/module_title_layout"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+           
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:padding="@dimen/record_bottom_pardding">
+
+            <TextView
+                android:id="@+id/record_time_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/record_time_text_size"
+                android:text="@string/record_show_time_text" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_menu_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/record_bottom_button"
+                android:paddingBottom="@dimen/record_bottom_pardding" 
+                android:onClick="onClickSetting">
+
+                <ImageView
+                    android:id="@+id/image_view_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/status_setting" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_view_setting"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/record_status_setting_text"
+                    android:textColor="@color/record_bottom_text_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/record_bottom_button"
+                android:paddingBottom="@dimen/record_bottom_pardding" 
+                android:onClick="onClickRecord">
+
+                <ImageView
+                    android:id="@+id/image_view_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/status_start" />
+
+                <TextView
+                    android:id="@+id/text_view_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_view_record"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/record_status_start_text"
+                    android:textColor="@color/record_bottom_text_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/record_bottom_button"
+                android:paddingBottom="@dimen/record_bottom_pardding" 
+                android:onClick="onClickList">
+
+                <ImageView
+                    android:id="@+id/image_view_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/status_list" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_view_list"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/record_status_list_text"
+                    android:textColor="@color/record_bottom_text_color" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

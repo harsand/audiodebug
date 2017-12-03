@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/keysound_item_default_pardding"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/keysound_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="@string/key_sound_default_text"
+        android:layout_marginTop="@dimen/keysound_item_default_margin"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/keysound_item_seekbar_pardding" >
+
+        <TextView
+            android:id="@+id/item_left_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" 
+            android:text="@string/key_sound_low_text" />
+
+        <TextView
+            android:id="@+id/item_right_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" 
+            android:text="@string/key_sound_high_text" />
+        <SeekBar
+            android:id="@+id/play_volume_seekbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/item_left_hint"
+            android:layout_toLeftOf="@+id/item_right_hint"
+            android:paddingLeft="@dimen/keysound_item_seekbar_padding"
+            android:paddingRight="@dimen/keysound_item_seekbar_padding"
+            android:progressDrawable="@drawable/keysound_seekbar_style"
+            android:thumb="@drawable/keysound_seekbar_thumb"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView
+            android:id="@+id/play_volume_hint_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/keysound_item_hint_margin"
+            android:layout_marginRight="@dimen/keysound_item_hint_margin"
+            android:singleLine="true"
+            android:text="@string/key_sound_hint_text" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keysound_item_sparate_height"
+        android:layout_marginTop="@dimen/keysound_item_default_margin"
+        android:background="@color/keysound_item_sparate_color" />
+
+</LinearLayout>

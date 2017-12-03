@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Audio Debug</string>
+
+    <!-- 返回的提示文字 -->
+    <string name="go_back_text">返回</string>
+    
+    <!-- key sound default text and other-->
+    <string name="key_sound_default_text">按下提示音</string>
+    <string name="key_sound_low_text">弱</string>
+    <string name="key_sound_high_text">强</string>
+    <string name="key_sound_hint_text">effectType: maxVolume: playVolume: </string>
+    
+    <!-- 音量设置栏2 文本提示 -->
+    <string name="volume_setting_title">铃声</string>
+    <string name="volume_setting_content">xxx.ogg</string>
+    
+    <!-- 自定义铃声选择对话框 -->
+     <string name="ringtone_dialog_title">选择铃声文件</string>
+     <string name="ringtone_dialog_cancle">取 消</string>
+    
+    <!-- file item text -->
+     <string name="file_item_name_text">文件名</string>
+     <string name="file_item_info_text">共xx项</string>
+     
+     <!-- 录音界面的文字 -->
+     <string name="record_show_time_text">00:00</string>
+     <string name="record_status_start_text">开始</string>
+     <string name="record_status_stop_text">停止</string>
+     <string name="record_status_setting_text">设置</string>
+     <string name="record_status_list_text">列表</string>
+     <string name="record_list_title_text">录音列表</string>
+
+    <string name="mediaplayer_tag_music">歌曲列表</string>
+    <string name="mediaplayer_tag_folder">歌曲目录</string>
+
+    <!-- 歌曲列表显示的内容 -->
+    <string name="audio_item_order">序号</string>
+    <string name="audio_item_name">歌名</string>
+    <string name="audio_item_other">歌手|专辑</string>
+
+</resources>

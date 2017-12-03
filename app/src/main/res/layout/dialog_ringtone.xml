@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/ringtone_dialog_margin_top"
+    android:layout_marginBottom="@dimen/ringtone_dialog_margin_bottom"
+    android:background="@drawable/ringtone_dialog_border"
+    >
+    <LinearLayout 
+         android:id="@+id/ringtone_title_layout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:orientation="vertical">
+	        <TextView
+	        android:id="@+id/ringtone_title"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="@dimen/ringtone_title_pardding"
+	        android:text="@string/ringtone_dialog_title"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:background="@color/debug_title_bg_color"
+	        android:textColor="@color/debug_title_text_color" />
+	        <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/title_sparate_bar_height"
+	        android:background="@drawable/title_sparate_bar"/>
+    </LinearLayout>
+   
+    <TextView 
+        android:id="@+id/ringtone_cancle_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/ringtone_cancle_button_pardding"
+        android:text="@string/ringtone_dialog_cancle"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="@drawable/ringtone_cancle_selector"
+        />
+    
+    <ListView 
+        android:id="@+id/rington_dialog_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/ringtone_cancle_button_pardding"
+        android:layout_below="@+id/ringtone_title_layout"
+        android:layout_above="@+id/ringtone_cancle_button">
+        
+    </ListView>
+</RelativeLayout>

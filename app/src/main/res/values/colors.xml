@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 标题栏背景颜色 -->
+     <color name="debug_title_bg_color">#339900</color>
+    <!-- main activity标题栏的字体颜色 -->
+    <color name="debug_title_text_color">#cccccc</color>
+     <!-- 默认的背景颜色 -->
+    <color name="default_bg_color">#99ff66</color>
+    
+    <!-- 彩条渐变颜色的起始颜色和结束颜色 -->
+    <color name="title_sparate_start_color">#339900</color>
+    <color name="title_sparate_end_color">#cccccc</color>
+    
+     <!-- module activity标题栏的字体颜色 -->
+     <color name="module_title_text_color">#cccccc</color>
+    
+     <!-- key sound 分割栏的高度 -->
+     <color name="keysound_item_sparate_color">#cccccc</color>
+     
+     <!-- 音量设置选择栏按下时背景颜色 -->
+     <color name="volume_setting_normal">#ffffff</color>
+     <color name="volume_setting_pressed">#99ff66</color>
+     
+     <!-- 铃声选择对话框取消按钮背景颜色 -->
+     <color name="ringtone_cancle_normal">#00000000</color>
+     <color name="ringtone_cancle_pressed">#99ff66</color>
+     <color name="ringtone_text_color">#ffffff</color>
+     
+     <!-- 录像界面底部按钮颜色 -->
+     <color name="record_bottom_normal">#99ff66</color>
+     <color name="record_bottom_pressed">#999966</color>
+     <color name="record_bottom_text_color">#ffffff</color>
+
+    <color name="pager_tag_selected_color">#b3f5c1</color>
+
+    <!-- 音乐播放目录的字体颜色 -->
+    <color name="audio_order_text_color">#898989</color>
+    <color name="audio_name_text_color">#1b1a1a</color>
+    <color name="audio_other_text_color">#898989</color>
+
+</resources>

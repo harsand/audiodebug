@@ -1,0 +1,47 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/debug_title_bg_color">
+        <RelativeLayout
+            android:id="@+id/goback_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:id="@+id/goback_icon"
+                android:layout_alignParentLeft="true"
+                android:layout_width="@dimen/title_icon_width"
+                android:layout_height="@dimen/title_icon_height"
+                android:src="@drawable/go_back"/>
+            <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_toRightOf="@+id/goback_icon"
+                 android:layout_centerVertical="true"
+                 android:text="@string/go_back_text"/>
+        </RelativeLayout>
+        <TextView 
+            android:id="@+id/base_module_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/module_title_size"
+            android:textColor="@color/module_title_text_color"
+            android:singleLine="true"
+            android:text="@string/app_name"
+           />
+    </RelativeLayout>
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_sparate_bar_height"
+        android:background="@drawable/title_sparate_bar"/>
+</LinearLayout>

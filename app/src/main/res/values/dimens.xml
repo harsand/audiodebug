@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+     <!-- main activity标题栏的字体大小 -->   
+     <dimen name="debug_title_size">28sp</dimen>
+     
+     <!-- 标题栏字体控件的内边距 -->
+     <dimen name="debug_title_pardding">2dp</dimen>
+     
+     <!-- 标题栏最下方分割栏的高度 -->
+     <dimen name="title_sparate_bar_height">4dp</dimen>
+     
+     <!-- module item的高度 图标的宽度和高度 -->
+     <dimen name="module_item_height">42dp</dimen>
+     <dimen name="module_item_icon_width">42dp</dimen>
+     <dimen name="module_item_icon_height">42dp</dimen>
+     
+     <!-- module item的内边距 -->
+     <dimen name="module_item_pardding">2dp</dimen>
+     
+     <!-- module item标题到左边icon的边距-->
+     <dimen name="module_item_title_margin">3dp</dimen>
+     
+     <!-- module标题栏的字体大小 -->   
+     <dimen name="module_title_size">24sp</dimen>
+     
+     <!-- activity上方标题栏的高度  以及返回图标的宽度和高度 -->
+     <dimen name="title_height">46dp</dimen>
+     <dimen name="title_icon_width">36dp</dimen>
+     <dimen name="title_icon_height">36dp</dimen>
+     
+     <!-- key sound 分割栏的高度 默认间距-->
+     <dimen name="keysound_item_sparate_height">2dp</dimen>
+     <dimen name="keysound_item_default_pardding">2dp</dimen>
+     <dimen name="keysound_item_default_margin">3dp</dimen>
+     
+     <!-- key sound seekbar的左右间距-->
+     <dimen name="keysound_item_seekbar_padding">7dp</dimen>
+     
+     <!-- key sound hint view的左右间距-->
+     <dimen name="keysound_item_seekbar_pardding">3dp</dimen>
+     <dimen name="keysound_item_hint_margin">3dp</dimen>
+     
+     <!--  -->
+     <dimen name="volume_setting_sparate_height">1dp</dimen>
+     
+     <!-- 选择铃声对话框取消按钮pardding ，上下的边距-->
+     <dimen name="ringtone_title_pardding">2dp</dimen>
+     <dimen name="ringtone_cancle_button_pardding">5dp</dimen>
+     <dimen name="ringtone_dialog_margin_top">12dp</dimen>
+     <dimen name="ringtone_dialog_margin_bottom">12dp</dimen>
+     
+     <!-- 选择铃声文件里面item的间距设置 -->
+     <dimen name="file_item_icon_margin">2dp</dimen>
+     <dimen name="file_item_name_margin">4dp</dimen>
+     
+     <!-- 录音界面底部按钮的间距 -->
+     <dimen name="record_bottom_pardding">5dp</dimen>
+     <dimen name="record_time_text_size">20sp</dimen>
+
+    <!-- 播放声音界面 tag 字体大小和内边距 -->
+    <dimen name="player_tag_text_size">24sp</dimen>
+    <dimen name="player_tag_padding">5dp</dimen>
+
+    <!-- 播放歌曲列表的字体大小和内边距 -->
+    <dimen name="audio_item_padding">5dp</dimen>
+    <dimen name="audio_item_marginLeft">6dp</dimen>
+
+    <dimen name="audio_order_text_size">18sp</dimen>
+    <dimen name="audio_name_text_size">24sp</dimen>
+    <dimen name="audio_other_text_size">18sp</dimen>
+
+</resources>

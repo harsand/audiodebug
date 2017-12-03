@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/module_title_layout"
+        layout="@layout/activity_base_module_title" />
+
+    <com.hxiong.audiodebug.widget.PagerTagLayout
+        android:id="@+id/player_switch_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/module_title_layout"
+       >
+
+        <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/player_tag_padding"
+              android:textSize="@dimen/player_tag_text_size"
+              android:gravity="center"
+              android:textColor="@color/title_sparate_start_color"
+              android:text="@string/mediaplayer_tag_music"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/player_tag_padding"
+            android:textSize="@dimen/player_tag_text_size"
+            android:gravity="center"
+            android:textColor="@color/title_sparate_start_color"
+            android:text="@string/mediaplayer_tag_folder"/>
+    </com.hxiong.audiodebug.widget.PagerTagLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/player_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/player_switch_layout"
+        android:visibility="visible"/>
+</RelativeLayout>

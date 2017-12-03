@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ringtone_dialog_border" >
+
+    <LinearLayout
+        android:id="@+id/list_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/debug_title_bg_color" >
+
+            <TextView
+                android:id="@+id/ringtone_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/ringtone_title_pardding"
+                android:text="@string/record_list_title_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/debug_title_text_color" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_sparate_bar_height"
+            android:background="@drawable/title_sparate_bar" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/record_dialog_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_title_layout" >
+    </ListView>
+
+</RelativeLayout>
